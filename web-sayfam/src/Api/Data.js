@@ -16,7 +16,7 @@ const Data = {
     Education:"Eğitim Durumu",
     Role:"Tercih Ettiği Rol",
     AboutHead:"Benim Hakkımda",
-    About:"Web siteleri oluşturmayı seven bir Biyomedikal Mühendisi ve Front-End Web Geliştiricisiyim. Banner oluşturma ve animasyonları (GSAP) üzerinde çalıştım ve ayrıca uyumlu Outlook ve Karanlık Mod Dostu Postalar ve mobil platformlarla Responsive E-Posta üzerinde çalıştım. E-Posta Asitini test ediyorum. Son olarak Açılış Sayfaları ve E-İçerikler üzerinde çalıştım. Sorun çözme konusunda araştırmacı bir kişiliğe sahibim ve yenilikçi bir insanım.",
+    About:"Web siteleri oluşturmayı seven bir Biyomedikal Mühendisi ve Front-End Web Geliştiricisiyim. Banner oluşturma ve animasyonları (GSAP) üzerinde çalıştım ve ayrıca uyumlu Outlook ve Karanlık Mod Dostu Postalar ve mobil platformlarla Responsive E-Posta üzerinde çalıştım. E-Postaları E-Mail Acid üzerinde test ediyorum. Son olarak Açılış Sayfaları ve E-İçerikler üzerinde çalıştım. Sorun çözme konusunda araştırmacı bir kişiliğe sahibim ve yenilikçi bir insanım.",
     University:"Bahçeşehir Ünv. Biyomedikal",
     University1:"Lisans,2019",
     Project1:"Alışveriş Sepeti",
