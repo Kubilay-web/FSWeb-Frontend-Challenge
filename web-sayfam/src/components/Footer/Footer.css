@@ -191,10 +191,10 @@ p.mail-text {
 
     p.footer-text-container {
         font-family: Inter;
-        font-size: 32px;
+        font-size: 27px;
         font-weight: 600;
-        line-height: 38px;
-        letter-spacing: 0em;
+        letter-spacing: 0;
+        line-height: 34px;
     }
 
 }
