@@ -25,6 +25,8 @@ a {
     gap: 14px;
 }
 
+
+
 .mode-container {
     display: flex;
     align-items: center;
@@ -43,6 +45,7 @@ a {
     height: 24px;
     border-radius: 100px;
     background: #4731D3;
+    cursor: pointer;
 }
 
 
@@ -55,6 +58,7 @@ a {
     line-height: normal;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    
 }
 
 span.language {
@@ -77,6 +81,7 @@ span.language {
     line-height: normal;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .line {
