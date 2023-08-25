@@ -29,7 +29,7 @@ function Header({skillsRef,projectsRef}) {
         <div className={`mode-container ${darkMode ? 'dark' : 'light'}`}>
           <div className="general-container">
             <div  onClick={toggleDarkMode} className="switch-mode-container">
-              <div className={`ellipse-container ${darkMode ? 'ellipse-right' : 'ellipse-left'}`}>
+              <div className="ellipse-container">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
                   <ellipse
                     className="ellipse"

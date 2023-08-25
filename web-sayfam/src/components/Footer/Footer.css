@@ -142,11 +142,41 @@
         padding: 85px 0px 0px 0px;
         gap: 60px;
     }
-
-    .space{
-        display:none !important;
-    }
 }
+
+
+
+@media screen and (max-width:426px) {
+    .footer-container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0px auto 0px auto;
+        padding: 85px 0px 40px 0px;
+        background-color: #F9F9F9;
+        border: 0;
+    }
+
+    .footer-second {
+        display: flex;
+        align-items: center;
+        width: 294px;
+        height: 211px;
+        gap: 20px;
+    }
+
+
+    .footer-first p {
+        color: #1F2937;
+        font-family: Inter;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+}
+
+
 
 
 

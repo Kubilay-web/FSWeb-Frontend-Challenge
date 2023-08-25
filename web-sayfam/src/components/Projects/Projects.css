@@ -163,6 +163,20 @@
 
 }
 
+@media screen and (max-width:426px) {
+    .projects-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        max-width: 1141px;
+        margin: 0px auto 0px auto;
+        padding: 52px 0px 79px 0px;
+        border: 0;
+    }
+}
+
 
 
 
