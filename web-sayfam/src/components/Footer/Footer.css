@@ -16,6 +16,8 @@
 }
 
 
+
+
 .footer-first {
     display: flex;
     flex-direction: column;
@@ -31,24 +33,24 @@
     gap: 5px;
 }
 
-.footer-first p {
-    color: #1F2937;
+p.footer-text-container {
     font-family: Inter;
     font-size: 42px;
-    font-style: normal;
     font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0em;
 }
 
-.footer-mail p {
-    color: #AF0C48;
+p.mail-text {
     font-family: Inter;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-decoration-line: underline;
+    line-height: 24px;
+    letter-spacing: 0.05em;  
+    color:#AF0C48; 
+    text-decoration:underline;
 }
+
 
 .footer-second {
     display: flex;
@@ -136,11 +138,21 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align:center;
+        text-align: center;
         width: 579px;
         height: 271px;
         padding: 85px 0px 0px 0px;
         gap: 60px;
+    }
+
+    .footer-container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0px auto 0px auto;
+        padding:0px;
+        background-color: #F9F9F9;
+        border: 0;
     }
 }
 
@@ -152,10 +164,11 @@
         width: 100%;
         height: auto;
         margin: 0px auto 0px auto;
-        padding: 85px 0px 40px 0px;
         background-color: #F9F9F9;
+        padding:0px;
         border: 0;
     }
+
 
     .footer-second {
         display: flex;
@@ -166,12 +179,22 @@
     }
 
 
-    .footer-first p {
-        color: #1F2937;
+    p.mail-text {
         font-family: Inter;
-        font-size: 28px;
-        font-style: normal;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.05em;  
+        color:#AF0C48; 
+        text-decoration:underline;
+    }
+
+    p.footer-text-container {
+        font-family: Inter;
+        font-size: 32px;
         font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0em;
     }
 
 }
@@ -185,11 +208,29 @@
     background-color: #141414;
 }
 
+p.footer-text-container.dark {
+    font-family: Inter;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0em;
+    color:#AEBCCF;
+}
+
 p.dark-text-title {
     color: #AEBCCF;
 }
 
 p.dark-text {
+    color: #BAB2E7;
+}
+
+p.mail-text.dark {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.05em;
     color: #BAB2E7;
 }
 

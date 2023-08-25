@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef,useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Section1 from './components/Section1/Section1';
@@ -14,6 +14,9 @@ function AppContent() {
   const { darkMode } = useColorMode();
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
+  const [value, setValue] = useState(0);
+
+  
   return (
     <div className={`app-container ${darkMode ? 'dark' : 'light'}`}>
       <Header skillsRef={skillsRef} projectsRef={projectsRef} />

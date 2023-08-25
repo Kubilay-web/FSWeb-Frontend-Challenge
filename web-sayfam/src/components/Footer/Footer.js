@@ -15,11 +15,11 @@ function Footer() {
             <div className={`footer-container ${darkMode ? 'dark' : 'light'}`}>
                 <div className={`footer-general-container ${darkMode ? 'dark' : 'light'}`}>
                     <div className={`footer-first ${darkMode ? 'dark' : 'light'}`}>
-                        <p className={darkMode ? 'dark-text-title' : 'light-text'}>{Data[currentLanguage].FooterTitle}<br className="space" />{Data[currentLanguage].FooterTitle1}</p>
+                        <p className={`footer-text-container ${darkMode ? 'dark' : 'light'}`}>{Data[currentLanguage].FooterTitle}<br className="space" />{Data[currentLanguage].FooterTitle1}</p>
                         <div className={`footer-mail ${darkMode ? 'dark' : 'light'}`}>
                             <img src={image3} alt="image3" style={{ width: '20px', height: "21px" }} />
                             <Link to="mailto:kubilayozdemir95@gmail.com" target='_blank'>
-                                <p className={darkMode ? 'dark-text' : 'light-text'}>kubilayozdemir95@gmail.com</p>
+                                <p className={`mail-text ${darkMode ? 'dark' : 'light'}`}>kubilayozdemir95@gmail.com</p>
                             </Link>
                         </div>
                     </div>

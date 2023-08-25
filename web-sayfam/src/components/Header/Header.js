@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import "./Header.css";
 import line2 from '../images/line2.png';
 import profile from "../images/profile.png";
@@ -10,7 +10,10 @@ import Data from '../../Api/Data';
 import { BrowserRouter as Router, Link, } from 'react-router-dom';
 
 
-function Header({skillsRef,projectsRef}) {
+
+
+
+function Header({ skillsRef, projectsRef }) {
   const { darkMode, toggleDarkMode } = useColorMode();
   const { currentLanguage, toggleLanguage } = useLanguage();
 
@@ -21,26 +24,24 @@ function Header({skillsRef,projectsRef}) {
   const scrollToProjects = () => {
     projectsRef.current.scrollIntoView({ behavior: 'smooth' });
   };
+  const [isOn, setIsOn] = useState(false);
 
+  const toggleSwitch = () => {
+    setIsOn(prevState => !prevState);
+  };
 
   return (
     <Router>
-      <div className={`main-container ${darkMode ? 'dark' : 'light'}`}>
+      
         <div className={`mode-container ${darkMode ? 'dark' : 'light'}`}>
           <div className="general-container">
-            <div  onClick={toggleDarkMode} className="switch-mode-container">
+            <div onClick={toggleDarkMode} className="switch-mode-container">
               <div className="ellipse-container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
-                  <ellipse
-                    className="ellipse"
-                    cx="7.5"
-                    cy="8"
-                    rx="7.5"
-                    ry="8"
-                    fill="#FFE86E"
-                  >
-                  </ellipse>
-                </svg>
+                <div className={`switch-mode-container ${isOn ? 'on' : ''}`} onClick={toggleSwitch}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                    <ellipse className={`ellipse ${isOn ? 'on' : ''}`} cx="7.5" cy="8" rx="7.5" ry="8" fill="#FFE86E"></ellipse>
+                  </svg>
+                </div>
               </div>
             </div>
             <div className={`switch-text-container ${darkMode ? 'dark' : 'light'}`}>
@@ -78,9 +79,9 @@ function Header({skillsRef,projectsRef}) {
             </div>
             <div className={`hero-sub-text ${darkMode ? 'dark' : 'light'}`}>
               <p>
-                {Data[currentLanguage].hireDescription}<br className='break'/>
-                {Data[currentLanguage].hireDescription1}<br className='break'/>
-                {Data[currentLanguage].hireDescription2}<br className='break'/>
+                {Data[currentLanguage].hireDescription}<br className='break' />
+                {Data[currentLanguage].hireDescription1}<br className='break' />
+                {Data[currentLanguage].hireDescription2}<br className='break' />
               </p>
             </div>
             <div className="hero-button">
@@ -106,7 +107,6 @@ function Header({skillsRef,projectsRef}) {
           </div>
         </div>
         <ToastContainer position="bottom-right" autoClose={3000} />
-      </div>
     </Router>
   );
 }

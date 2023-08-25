@@ -19,6 +19,32 @@ a {
 }
 
 
+.switch-mode-container {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+
+  
+  
+  .ellipse {
+    transition: transform 0.3s, fill 0.3s;
+  }
+  
+  .switch-mode-container.on .ellipse {
+    transform: translateX(30px);
+    background-color: #ccc;
+  }
+
+
+
 .general-container {
     display: flex;
     align-items: center;
@@ -247,7 +273,7 @@ li.hire {
 
 .hero-image-name p {
     font-family: Inter;
-    font-size: 20px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
